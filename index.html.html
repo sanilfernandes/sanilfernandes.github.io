@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sanil Fernandes – Technical Project Coordinator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f6f9;--surface:#fff;--ink:#12202f;--muted:#5b6b7b;--line:#d5dde6;--accent:#1f5fd1;--accent-ink:#fff;--live:#1e8e5a;
+--display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;--body:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1722;--surface:#16212e;--ink:#e8eef5;--muted:#9aabbc;--line:#27374a;--accent:#6ea2ff;--accent-ink:#0e1722;--live:#4cc58a}}
+:root[data-theme="dark"]{--bg:#0e1722;--surface:#16212e;--ink:#e8eef5;--muted:#9aabbc;--line:#27374a;--accent:#6ea2ff;--accent-ink:#0e1722;--live:#4cc58a}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body)}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.25rem}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0}
+.brand{font:700 1.1rem var(--display);color:var(--ink);text-decoration:none}
+nav a{color:var(--muted);text-decoration:none;margin-left:1.25rem;font-size:.95rem}
+nav a:hover{color:var(--ink)}
+.hero{padding:3rem 0 2rem}
+.status{display:inline-flex;align-items:center;gap:.5rem;font-size:.95rem;color:var(--muted)}
+.dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--live);box-shadow:0 0 0 4px color-mix(in srgb,var(--live) 22%,transparent)}
+h1{font:700 clamp(2.4rem,6.5vw,4.4rem)/1.04 var(--display);letter-spacing:-.025em;margin:1rem 0 1.25rem;max-width:16ch}
+.lede{font-size:1.2rem;max-width:38rem;color:var(--muted);margin:0 0 1.75rem}
+.lede strong{color:var(--ink);font-weight:500}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.7rem 1.2rem;border-radius:.5rem;font-weight:500;text-decoration:none;border:1px solid var(--line);color:var(--ink);background:var(--surface)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.pipe{margin:3rem 0 1rem;background:var(--surface);border:1px solid var(--line);border-radius:1rem;padding:1.5rem}
+.pipe h2{font:700 1.15rem var(--display);margin:0 0 .25rem}
+.pipe>p{margin:0 0 1.25rem;color:var(--muted);font-size:.95rem}
+.track{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,1fr);position:relative}
+.track::before{content:"";position:absolute;left:8%;right:8%;top:1.1rem;height:2px;background:var(--line)}
+.track li{position:relative;text-align:center}
+.track button{all:unset;cursor:pointer;display:block;width:100%;padding:0 .15rem .5rem;font-size:.88rem;color:var(--muted)}
+.track .n{display:grid;place-items:center;width:2.2rem;height:2.2rem;margin:0 auto .45rem;border-radius:50%;background:var(--surface);border:2px solid var(--line);font:700 .9rem var(--display);position:relative;color:var(--muted)}
+.track button[aria-selected="true"]{color:var(--ink);font-weight:500}
+.track button[aria-selected="true"] .n{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.track button.done .n{border-color:var(--accent);color:var(--accent)}
+.panel{border-top:1px solid var(--line);margin-top:.75rem;padding-top:1.1rem;min-height:5.5rem}
+.panel h3{margin:0 0 .3rem;font:700 1.05rem var(--display)}
+.panel p{margin:0;max-width:42rem}
+section{padding:3.5rem 0 .5rem}
+h2.s{font:700 clamp(1.6rem,3.5vw,2.1rem) var(--display);letter-spacing:-.015em;margin:0 0 1.5rem}
+.job{display:grid;grid-template-columns:11rem 1fr;gap:1rem 2rem;padding:1.5rem 0;border-top:1px solid var(--line)}
+.job h3{margin:0;font:700 1.15rem var(--display)}
+.meta{color:var(--muted);font-size:.95rem}
+.job ul{margin:0;padding-left:1.1rem}
+.job li{margin-bottom:.55rem;max-width:44rem}
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1.25rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:.75rem;padding:1.4rem}
+.card h3{margin:0 0 .25rem;font:700 1.1rem var(--display)}
+.tools{color:var(--muted);font-size:.92rem;margin:.75rem 0 0}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.5rem 2rem}
+.skills h3{margin:0 0 .35rem;font:700 1rem var(--display)}
+.skills p{margin:0;color:var(--muted)}
+.edu{display:grid;gap:1.25rem}
+.edu h3{margin:0;font:700 1.05rem var(--display)}
+.contact{margin:3.5rem 0 0;padding:2.5rem 0 3rem;border-top:1px solid var(--line)}
+.contact p{max-width:34rem;color:var(--muted)}
+footer{padding-bottom:2rem;color:var(--muted);font-size:.9rem}
+@media (max-width:42rem){
+ nav a{margin-left:.9rem}
+ .job{grid-template-columns:1fr;gap:.5rem}
+ .track{grid-template-columns:1fr;gap:.25rem}
+ .track::before{display:none}
+ .track button{display:flex;align-items:center;gap:.75rem;text-align:left;padding:.35rem 0}
+ .track .n{margin:0;flex:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+ <a class="brand" href="#top">Sanil Fernandes</a>
+ <nav aria-label="Sections"><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main id="top">
+<div class="hero">
+ <span class="status"><span class="dot" aria-hidden="true"></span>Toronto, Ontario. Open to new roles.</span>
+ <h1>I take promotions and platforms from requirements to live.</h1>
+ <p class="lede">I’m a technical project coordinator with <strong>5+ years</strong> delivering campaign sites, APIs and loyalty programs, and <strong>78+ programs a year</strong> across developers, QA, designers, PMs and client success teams.</p>
+ <div class="btns"><a class="btn primary" href="mailto:sanilfernandes08@gmail.com">Email me</a><a class="btn" href="#experience">See my experience</a><a class="btn" href="https://www.linkedin.com/in/sanil-f-009380176/" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/sanilfernandes" target="_blank" rel="noopener">GitHub</a></div>
+
+ <div class="pipe">
+  <h2>How a launch runs</h2>
+  <p>Select a stage to see what I own.</p>
+  <ol class="track" role="tablist" aria-label="Delivery stages" id="track"></ol>
+  <div class="panel" id="panel" role="tabpanel" aria-live="polite"></div>
+ </div>
+</div>
+
+<section id="experience">
+ <h2 class="s">Experience</h2>
+ <article class="job">
+  <div><h3>Technical Project Coordinator</h3><div class="meta">Snipp Interactive Inc.<br>Feb 2021 to present<br>Remote</div></div>
+  <ul>
+   <li>Coordinate end-to-end delivery of 78+ promotional and loyalty programs a year (microsites, APIs, widgets, receipt-validation flows) with developers, QA, UI, PMs and client success managers.</li>
+   <li>Configure and deploy campaigns in JSON: campaign setup, validation rules, processing logic, reward eligibility and offers.</li>
+   <li>Test and validate API integrations and real-time data workflows, working with developers to resolve issues.</li>
+   <li>Run UAT feedback cycles, coordinate developer fixes and drive successful deployments.</li>
+   <li>Build HTML/CSS email templates from client creative, including reusable base templates that cut repeated effort and sped up delivery.</li>
+   <li>Set up Google Analytics and Tag Manager tracking, build Umbraco landing pages, and send email blasts through Zoho Campaigns.</li>
+   <li>Write and track user stories in Jira and Zoho Projects, and resolve live campaign issues and customer support queries after launch so rewards process correctly.</li>
+  </ul>
+ </article>
+ <article class="job">
+  <div><h3>Technical Support Intern</h3><div class="meta">EN Solutions Hydro.<br>Jun to Aug 2024<br>Remote</div></div>
+  <ul>
+   <li>Integrated an AI chatbot using the Ollama model API into the web-based TGM Manager platform, working with developers on performance and usability.</li>
+   <li>Documented the integration, took part in QA testing and supported end-user training for deployment.</li>
+  </ul>
+ </article>
+</section>
+
+<section id="projects">
+ <h2 class="s">Projects</h2>
+ <div class="proj">
+  <div class="card"><h3>AI-powered review sentiment analysis</h3><div class="meta">Business Analytics capstone, 2024</div>
+   <p>A system that analyzes and consolidates customer review sentiment with NLP, then generates structured reports with recommendations to support brand strategy and targeted marketing.</p>
+   <p class="tools">Python, Gemini AI API, Google Maps API, Pandas</p><p><a href="https://github.com/sanilfernandes/AI_in_Marketing_Analytics" target="_blank" rel="noopener">View the project on GitHub</a></p></div>
+  <div class="card"><h3>Skin disease prediction</h3><div class="meta">Computer Science final-year project, 2020</div>
+   <p>A CNN-based image classifier for skin disease detection, with a real-time interface where users upload an image and receive a predicted diagnosis.</p>
+   <p class="tools">Python, TensorFlow, OpenCV, CNN</p></div>
+ </div>
+</section>
+
+<section id="skills">
+ <h2 class="s">Skills</h2>
+ <div class="skills">
+  <div><h3>Delivery</h3><p>Full SDLC delivery, UAT coordination, requirements translation, stakeholder management, production issue triage</p></div>
+  <div><h3>Technical</h3><p>HTML/CSS, JavaScript/TypeScript, API testing and validation, JSON configuration</p></div>
+  <div><h3>Data and analysis</h3><p>SQL, Excel, Power BI, R, Python, data cleaning, business intelligence</p></div>
+  <div><h3>Tools</h3><p>Jira, Zoho Projects, Google Analytics, Tag Manager, Umbraco CMS, Zoho Campaigns, Figma</p></div>
+ </div>
+</section>
+
+<section id="education">
+ <h2 class="s">Education</h2>
+ <div class="edu">
+  <div><h3>Graduate Certificate, Business Analytics</h3><div class="meta">St. Lawrence College, Kingston. 2023 to 2024</div></div>
+  <div><h3>Bachelor of Engineering, Computer Science</h3><div class="meta">Mumbai University, St. Francis Institute of Technology. 2016 to 2020</div></div>
+ </div>
+</section>
+
+<div class="contact" id="contact">
+ <h2 class="s">Let’s talk</h2>
+ <p>I’m looking for implementation and technical delivery roles at SaaS companies. Email is the quickest way to reach me.</p>
+ <div class="btns"><a class="btn primary" href="mailto:sanilfernandes08@gmail.com">sanilfernandes08@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/sanil-f-009380176/" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/sanilfernandes" target="_blank" rel="noopener">GitHub</a></div>
+</div>
+</main>
+<footer>© Sanil Fernandes</footer>
+</div>
+
+<script>
+(function(){
+var stages=[
+["Requirements","Requirements","I turn client requirements into campaign setup, offer and reward rules, and write the user stories in Jira and Zoho Projects."],
+["Configure","Configuration","I set up campaigns in JSON (validation rules, processing logic, reward eligibility), build landing pages in Umbraco and code HTML/CSS email templates."],
+["Validate","Validation","I test API integrations and real-time data flows, work with developers to fix what breaks, and set up Google Analytics and Tag Manager tracking."],
+["UAT","User acceptance testing","I run client feedback cycles, sort the reported bugs and coordinate developer fixes until the client signs off."],
+["Launch","Launch","I coordinate deployment across developers, QA, UI, PMs and client success, and send launch emails through Zoho Campaigns."],
+["Support","Live support","I own live issues and customer support queries after launch so rewards are processed accurately."]
+];
+var track=document.getElementById("track"),panel=document.getElementById("panel"),btns=[];
+stages.forEach(function(s,i){
+ var li=document.createElement("li"),b=document.createElement("button");
+ b.setAttribute("role","tab");b.id="tab"+i;
+ b.innerHTML='<span class="n">'+(i+1)+'</span>'+s[0];
+ b.addEventListener("click",function(){pick(i)});
+ b.addEventListener("keydown",function(e){
+  if(e.key==="ArrowRight"||e.key==="ArrowDown"){e.preventDefault();pick((i+1)%stages.length,true)}
+  if(e.key==="ArrowLeft"||e.key==="ArrowUp"){e.preventDefault();pick((i+stages.length-1)%stages.length,true)}
+ });
+ li.appendChild(b);track.appendChild(li);btns.push(b);
+});
+function pick(i,focus){
+ btns.forEach(function(b,j){b.setAttribute("aria-selected",j===i?"true":"false");b.tabIndex=j===i?0:-1;b.className=j<i?"done":""});
+ panel.setAttribute("aria-labelledby","tab"+i);
+ panel.innerHTML="<h3></h3><p></p>";
+ panel.children[0].textContent="Stage "+(i+1)+": "+stages[i][1];
+ panel.children[1].textContent=stages[i][2];
+ if(focus)btns[i].focus();
+}
+pick(0);
+})();
+</script>
+</body>
+</html>
